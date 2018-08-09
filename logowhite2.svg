@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="282" height="35" viewBox="0 0 282 35">
+  <g fill="#FFF" fill-rule="evenodd" letter-spacing="2">
+    <text font-family="AkzidenzGroteskBQ-Bold, Akzidenz-Grotesk BQ" font-size="30" font-weight="bold">
+      <tspan x="0" y="28">PIPEDREA</tspan> <tspan x="169.78" y="28">M</tspan>
+    </text>
+    <text font-family="AkzidenzGroteskBQ-Light, Akzidenz-Grotesk BQ" font-size="29" font-weight="300" opacity=".497">
+      <tspan x="204" y="27">LAB</tspan> <tspan x="264.375" y="27">S</tspan>
+    </text>
+  </g>
+</svg>

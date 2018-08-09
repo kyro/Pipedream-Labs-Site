@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>0-Bloc</title>
+  <link href="reset.css" rel="stylesheet">
+</head>
+<style>
+
+
+  body {
+    background-color: #ffffff;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+  }
+
+  div#logo-container {
+    position: absolute;
+    top: 50%;
+    margin-top: -14px;
+    /* half of #content height*/
+    left: 0;
+    width: 100%;
+  }
+
+  div#logo {
+    width: 300px;
+    margin-left: 80px;
+    height: 28px;
+  }
+
+  div#links {
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+  }
+
+  a {
+    display: block;
+    float: left;
+    margin-right: 40px;
+    text-decoration: none;
+    color: #3EC3FF;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+  }
+
+  .fullscreen-bg__video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: auto;
+      min-width: 100%;
+      min-height: 100%;
+      -webkit-transform: translate(-50%, -50%);
+         -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+  	    transform: translate(-50%, -50%);
+  }
+
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+
+    div {
+      width: 80%;
+    }
+
+  }
+
+</style>
+
+<body>
+  <div class="fullscreen-bg">
+    <video loop muted autoplay poster="#" class="fullscreen-bg__video">
+        <source src="Ocean2.webm" type="video/webm">
+        <source src="Ocean2.mp4" type="video/mp4">
+        <source src="Ocean2.ogv" type="video/ogg">
+    </video>
+  </div>
+  <div id="logo-container">
+    <div id="logo">
+      <img src="logowhite.svg">
+    </div>
+  </div>
+  <div id="links">
+    <a href="#">careers</a>
+    <a href="mailto:info@0pipedre.am">info@pipedre.am</a>
+  </div>
+</body>
+</html>
