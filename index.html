@@ -14,21 +14,22 @@
     background-color: #ffffff;
     font-family: 'Helvetica Neue';
     font-size: 18px;
+    overflow: hidden;
   }
 
   div#logo-container {
     position: absolute;
     top: 50%;
-    margin-top: -14px;
+    margin-top: -12px;
     /* half of #content height*/
     left: 0;
     width: 100%;
   }
 
   div#logo {
-    width: 300px;
+    width: 257px;
     margin-left: 80px;
-    height: 28px;
+    height: 23px;
   }
 
   div#links {
@@ -47,6 +48,10 @@
     margin-top: 30px;
   }
 
+  a#last {
+    margin-right: 0;
+  }
+
   a:hover {
     text-decoration: underline;
   }
@@ -62,33 +67,55 @@
   }
 
   .fullscreen-bg__video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: auto;
-      height: auto;
-      min-width: 100%;
-      min-height: 100%;
-      -webkit-transform: translate(-50%, -50%);
-         -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-  	    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
   }
 
 
-  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  @media (max-width: 767px) {
 
-    div {
-      width: 80%;
-    }
+      .fullscreen-bg__video {
+          display: inline;
+      }
 
+      div#logo-container {
+        position: absolute;
+        top: 50%;
+        margin-top: -12px;
+        /* half of #content height*/
+        left: 0;
+        width: 100%;
+      }
+
+      div#logo {
+        width: 257px;
+        height: 23px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      div#links {
+        display: block;
+        bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+      }
   }
 
 </style>
 
 <body>
   <div class="fullscreen-bg">
-    <video loop muted autoplay poster="#" class="fullscreen-bg__video">
+    <video loop muted autoplay playsinline poster="#" class="fullscreen-bg__video">
         <source src="Ocean2.webm" type="video/webm">
         <source src="Ocean2.mp4" type="video/mp4">
         <source src="Ocean2.ogv" type="video/ogg">
@@ -101,7 +128,7 @@
   </div>
   <div id="links">
     <a href="#">careers</a>
-    <a href="mailto:info@0pipedre.am">info@pipedre.am</a>
+    <a id="last" href="mailto:info@0pipedre.am">info@pipedre.am</a>
   </div>
 </body>
 </html>
