@@ -32,10 +32,17 @@
     height: 23px;
   }
 
-  div#links {
+  div#links-container {
     position: absolute;
     bottom: 50px;
-    left: 80px;
+    /* half of #content height*/
+    left: 0;
+    width: 100%;
+  }
+
+  div#links {
+    width: 242px;
+    margin-left: 80px;
   }
 
   a {
@@ -87,25 +94,12 @@
           display: inline;
       }
 
-      div#logo-container {
-        position: absolute;
-        top: 50%;
-        margin-top: -12px;
-        /* half of #content height*/
-        left: 0;
-        width: 100%;
-      }
-
       div#logo {
-        width: 257px;
-        height: 23px;
         margin-left: auto;
         margin-right: auto;
       }
 
       div#links {
-        display: block;
-        bottom: 50px;
         margin-left: auto;
         margin-right: auto;
       }
@@ -126,9 +120,11 @@
       <img src="logowhite.svg">
     </div>
   </div>
-  <div id="links">
-    <a href="#">careers</a>
-    <a id="last" href="mailto:info@0pipedre.am">info@pipedre.am</a>
+  <div id="links-container">
+    <div id="links">
+      <a href="#">careers</a>
+      <a id="last" href="mailto:info@0pipedre.am">info@pipedre.am</a>
+    </div>
   </div>
 </body>
 </html>
