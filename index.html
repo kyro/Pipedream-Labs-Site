@@ -7,21 +7,9 @@
   <title>Pipedream Labs</title>
   <link href="reset.css" rel="stylesheet">
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="inobounce.js"></script>
 </head>
 <script type="text/javascript">
-  document.body.addEventListener('touchmove', function(event) {
-       console.log(event.source);
-       //if (event.source == document.body)
-         event.preventDefault();
-     }, false);
-
-     window.onresize = function() {
-       $(document.body).width(window.innerWidth).height(window.innerHeight);
-     }
-
-     $(function() {
-       window.onresize();
-  });
 </script>
 <style>
 
@@ -49,6 +37,8 @@
     width: 257px;
     margin-left: 80px;
     height: 23px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   div#links-container {
@@ -62,6 +52,9 @@
   div#links {
     width: 165px;
     margin-left: 80px;
+    height: 18px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   a {
